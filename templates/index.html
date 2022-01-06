@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+        }
+        h1{
+            text-align: center;
+            padding: 4px;
+            color: darkblue;
+            background-color:grey;
+            font-size: 30px;
+            font-weight: 200;
+        }
+        form{
+            width: 500px;
+            height: 250px;
+            border: grey solid 2px;
+            display: block;
+            margin: auto;
+            background-color: rgb(163, 161, 161);
+        }
+        input{
+            margin: auto;
+        }
+        .input{
+            width: 380px;
+            height: 70px;
+            margin: 15px 60px;
+            padding: 4px;
+            border: black solid 3px;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+        .submit{
+            width: 100px;
+            height: 50px;
+            margin: 5px 175px;
+            padding: 4px;
+        }
+        label{
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-bottom: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Youtube Transcript Summarizer</h1>
+    <form method="POST">
+        <label for="variable">Paste Youtube link here</label>
+        <input name="variable" class="input">
+        <input type="submit" class="submit">
+    </form>
+</body>
+</html>
